@@ -1,0 +1,23 @@
+{
+  "meta" : {
+    "purpose" : "measure durations of all HTTP11 Requests"
+  },
+  "qualifier" : "responseStats",
+  "targetClass" : "org.apache.coyote.http11.Http11Processor",
+  "instrumentationInstructions" : [
+  {
+    "@class" : "io.verticle.apex.commons.oss.repository.model.instrumentation.InstrumentationInstructionModel",
+    "qualifier" : "tomcat.http11responses",
+    "methodName" : "service",
+    "signatureClasses" : ["org.apache.tomcat.util.net.SocketWrapperBase"],
+    "handlers" : [ {
+      "@class" : "io.verticle.apex.commons.oss.repository.model.instrumentation.HandlerModel",
+      "handlerClass" : "io.verticle.oss.apex.agent.sdk.handler.BasicScriptedHandler",
+      "options" : {
+        "groovy" : "ResponseStats.groovy"
+      }
+    }],
+    "enabled" : true,
+    "constructor" : false
+  } ]
+}

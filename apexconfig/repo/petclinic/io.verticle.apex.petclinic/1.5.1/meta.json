@@ -1,0 +1,11 @@
+{
+  "assetName" : "petclinic",
+  "packageName" : "io.verticle.apex.petclinic",
+  "version" : "1.5.1",
+  "author" : "jens",
+  "authorEmail" : "jens@verticle.io",
+  "authorHomepage" : "http://verticle.io",
+  "fingerprint" : "-",
+  "created" : null,
+  "description" : "This package instruments Spring Petclinic."
+}

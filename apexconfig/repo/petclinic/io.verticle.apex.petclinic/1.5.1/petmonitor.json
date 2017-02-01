@@ -1,0 +1,26 @@
+{
+  "meta" : {
+    "purpose" : "monitoring pets"
+  },
+  "qualifier" : "petactions",
+  "targetClass" : "org.springframework.samples.petclinic.owner.PetController",
+  "instrumentationInstructions" : [
+  {
+    "@class" : "io.verticle.apex.commons.oss.repository.model.instrumentation.InstrumentationInstructionModel",
+    "qualifier" : "petclinic.owneradditions",
+    "methodName" : "processCreationForm",
+    "signatureClasses" : [
+      "org.springframework.samples.petclinic.owner.Owner",
+      "org.springframework.samples.petclinic.owner.Pet",
+      "org.springframework.validation.BindingResult",
+      "org.springframework.ui.ModelMap"
+    ],
+    "handlers" : [ {
+      "@class" : "io.verticle.apex.commons.oss.repository.model.instrumentation.HandlerModel",
+      "handlerClass" : "io.verticle.oss.apex.agent.sdk.handler.BasicContextDumpHandler"
+
+    }],
+    "enabled" : true,
+    "constructor" : false
+  } ]
+}
