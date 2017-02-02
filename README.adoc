@@ -1,5 +1,9 @@
 ## APEX Petclinic Demo
 
+APEX extracts contextual data and metrics directly from your Java application.
+
+It helps getting better visibility and understanding of what is happening in the software products' application layer during runtime. Designed to accelerate application analytics, debugging and monitoring.
+
 This demo configuration will spin up preconfigured docker containers to play with APEX and Spring Petclinic:
 
 * Spring Petclinic with APEX installed
