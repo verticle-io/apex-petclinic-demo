@@ -8,8 +8,11 @@ This demo configuration will spin up preconfigured docker containers to play wit
 * Kibana
 
 
-
 To run this demo you need docker and docker-compose installed.
+
+image:./petclinic.png[]
+
+image:./Petclinic_Dashboard_Kibana.png[]
 
 ### Installation and Setup
 
