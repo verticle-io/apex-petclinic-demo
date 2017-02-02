@@ -30,6 +30,10 @@ cd apex-petclinic-demo
 docker-compose up
 ----
 
+If you would like to use the preconfigured dashboard:
+Go to Kibana Management->SavedObjects and import the file `kibanaconfig/export.json`
+
+
 ### Things to check out
 
 #### APEX reactions
